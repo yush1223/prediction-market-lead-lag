@@ -1,0 +1,27 @@
+STALE-QUOTE FILL CHECK - AAA gas weekly trades after big WTI moves (spec v7)
+  big oil move = top 5% of 5-min changes (|d| >= 0.201); window 60 min after the bar
+
+  horizon 30min  (gas events 135)
+    group                    trades   contracts  mean markout  share > 0      sum $
+    A aligned w/ oil         62,142   5,832,018       -0.14c        38%     -8,216
+    B against oil            59,471   4,952,617       -0.43c        33%    -21,252
+    C baseline              466,283  46,509,711       -0.42c        33%   -195,262
+    A - C = 0.28c (t 0.87);  B - C = -0.01c (t -0.04)
+
+  horizon 2h  (gas events 135)
+    group                    trades   contracts  mean markout  share > 0      sum $
+    A aligned w/ oil         59,844   5,611,450        0.14c        44%      8,114
+    B against oil            56,415   4,637,683       -0.17c        39%     -7,717
+    C baseline              440,654  43,846,145       -0.41c        38%   -180,229
+    A - C = 0.56c (t 1.21);  B - C = 0.24c (t 1.13)
+    largest single A trade: KXAAAGASW-26APR13-4.220 no 2155 @ 0.59, markout 42.5c -> $916 of A's $8,114 total
+
+  horizon 6h  (gas events 135)
+    group                    trades   contracts  mean markout  share > 0      sum $
+    A aligned w/ oil         52,009   4,444,901        0.23c        46%     10,195
+    B against oil            49,192   3,755,657       -0.71c        42%    -26,585
+    C baseline              411,467  40,205,989       -0.38c        42%   -152,344
+    A - C = 0.61c (t 0.91);  B - C = -0.33c (t -1.23)
+
+  PRIMARY (2h, A - C): 0.56c per contract, t 1.21 -> no
+  Tally: 6880 + 1 = 6881. No fees (taker fees would reduce A's markout).

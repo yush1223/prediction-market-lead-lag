@@ -1,0 +1,55 @@
+SPORTS v6 - game -> season, matched by team/player
+
+COVERAGE
+  KXMARMAD           entities   148, entity-hours with a change   210689
+  KXNCAAFGAME        entities   300, entity-hours with a change   826969
+  KXNCAAFTOPAPRANK   entities    76, entity-hours with a change     9431
+  KXNCAAFWINS        entities    73, entity-hours with a change   153202
+  KXNCAAMBGAME       entities   510, entity-hours with a change   417003
+  KXNCAAWBGAME       entities   397, entity-hours with a change   238989
+  KXNFLGAME          entities    33, entity-hours with a change   262345
+  KXNFLWINS          entities    32, entity-hours with a change   116110
+  KXPGAR1LEAD        entities   669, entity-hours with a change   192259
+  KXPGAR3LEAD        entities   293, entity-hours with a change    41191
+  KXPGATOUR          entities   794, entity-hours with a change   804326
+  KXWMARMAD          entities    87, entity-hours with a change    37444
+
+==============================================================================
+F4 signed
+==============================================================================
+  testable 14; null best-noise median 1.69, 95th pct 2.70
+  S05           KXNCAAFGAME -> KXNCAAFWINS        6h  stat   6.64  hours  54446  clusters   72  entities   73  SURVIVOR -> holdout 4.98 PASS
+  S05           KXNCAAFGAME -> KXNCAAFWINS        1h  stat   4.32  hours  66896  clusters   72  entities   73  SURVIVOR -> holdout 5.05 PASS
+  S07          KXNCAAMBGAME -> KXMARMAD           1h  stat   3.34  hours  35931  clusters   76  entities  125  SURVIVOR -> holdout 3.07 PASS
+  S07          KXNCAAMBGAME -> KXMARMAD           6h  stat   3.04  hours  25146  clusters   75  entities  125  SURVIVOR -> holdout 3.08 PASS
+  S01             KXNFLGAME -> KXNFLWINS          1h  stat   2.77  hours  54332  clusters   32  entities   32  SURVIVOR -> holdout 4.79 PASS
+  S01             KXNFLGAME -> KXNFLWINS          6h  stat   2.73  hours  48531  clusters   32  entities   32  SURVIVOR -> holdout 5.34 PASS
+  S09           KXPGAR1LEAD -> KXPGATOUR          6h  stat   2.21  hours  64950  clusters 2768  entities  550
+  S09           KXPGAR1LEAD -> KXPGATOUR          1h  stat   1.10  hours  89565  clusters 2910  entities  550
+  S08          KXNCAAWBGAME -> KXWMARMAD          1h  stat   1.10  hours   4869  clusters   21  entities   84
+  S10           KXPGAR3LEAD -> KXPGATOUR          1h  stat   0.61  hours  23312  clusters  958  entities  269
+  S06           KXNCAAFGAME -> KXNCAAFTOPAPRANK   1h  stat   0.40  hours   2716  clusters  403  entities   76
+  S06           KXNCAAFGAME -> KXNCAAFTOPAPRANK   6h  stat  -0.62  hours    921  clusters  141  entities   76
+  S10           KXPGAR3LEAD -> KXPGATOUR          6h  stat  -0.80  hours  20006  clusters  919  entities  269
+  S08          KXNCAAWBGAME -> KXWMARMAD          6h  stat  -0.93  hours   2905  clusters   21  entities   84
+
+==============================================================================
+F4r reversed placebo
+==============================================================================
+  testable 14; null best-noise median 1.92, 95th pct 2.71
+  S10-rev         KXPGATOUR -> KXPGAR3LEAD        6h  stat   4.10  hours   8899  clusters  665  entities  269  SURVIVOR -> holdout 3.02 PASS
+  S10-rev         KXPGATOUR -> KXPGAR3LEAD        1h  stat   2.44  hours  19176  clusters  924  entities  269
+  S01-rev         KXNFLWINS -> KXNFLGAME          1h  stat   1.64  hours  54078  clusters  226  entities   32
+  S09-rev         KXPGATOUR -> KXPGAR1LEAD        1h  stat   1.61  hours  83393  clusters 2876  entities  550
+  S06-rev  KXNCAAFTOPAPRANK -> KXNCAAFGAME        6h  stat   1.21  hours   4056  clusters  333  entities   76
+  S07-rev          KXMARMAD -> KXNCAAMBGAME       6h  stat   1.12  hours  30924  clusters 1528  entities  125
+  S08-rev         KXWMARMAD -> KXNCAAWBGAME       1h  stat   1.05  hours   4896  clusters  221  entities   84
+  S01-rev         KXNFLWINS -> KXNFLGAME          6h  stat   0.85  hours  47460  clusters  228  entities   32
+  S09-rev         KXPGATOUR -> KXPGAR1LEAD        6h  stat   0.68  hours  45114  clusters 2651  entities  550
+  S05-rev       KXNCAAFWINS -> KXNCAAFGAME        1h  stat   0.32  hours  67418  clusters  467  entities   73
+  S07-rev          KXMARMAD -> KXNCAAMBGAME       1h  stat   0.28  hours  38212  clusters 1533  entities  125
+  S06-rev  KXNCAAFTOPAPRANK -> KXNCAAFGAME        1h  stat   0.19  hours   4728  clusters  351  entities   76
+  S05-rev       KXNCAAFWINS -> KXNCAAFGAME        6h  stat   0.13  hours  57760  clusters  463  entities   73
+  S08-rev         KXWMARMAD -> KXNCAAWBGAME       6h  stat   0.05  hours   3160  clusters  209  entities   84
+
+Variants tested in v6: 28. Added to the overnight tally. No fees, no P&L.

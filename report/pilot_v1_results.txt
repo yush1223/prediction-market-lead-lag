@@ -1,0 +1,14 @@
+pilot_spec.md sha256 e8c843dfe4ec... matches
+  index KXWTIW      271 days,  190 with a change, 99% of those non-zero, 70 events
+  index KXAAAGASW   201 days,  154 with a change, 100% of those non-zero, 44 events
+  index KXTNOTEW    199 days,  125 with a change, 98% of those non-zero, 57 events
+  index KXFRM       135 days,   89 with a change, 98% of those non-zero, 42 events
+
+pair leader -> laggard                  b      t  pass  days events same-day r
+E01  KXWTIW -> KXAAAGASW          -0.0002  -0.17    no    52     29       0.46
+E23  KXTNOTEW -> KXFRM           too few joint days (1)
+
+Size of the predicted move vs cost (one-standard-deviation leader move):
+  E01 KXAAAGASW: predicted price move 1.16c vs typical spread 4.0c + round-trip fee n/a
+
+Variants tested: 2 (pilot, pre-specified). Counted toward the final tally.

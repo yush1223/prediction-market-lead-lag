@@ -1,0 +1,128 @@
+Overnight hourly suite v5 - 71 indexable series
+
+==============================================================================
+F1 SIGNED PAIRS (evidence)
+==============================================================================
+  tests defined 144, testable 112
+  statistic distribution: min -2.89  25% -0.39  median 0.33  75% 1.43  max 9.41
+  naive |stat| >= 2: 17 of 112 (15.2%)
+  shuffled null (500): best-noise median 3.21, 95th pct 8.69 <- threshold
+  survivors -> holdout: 1
+    E08            KXAAAGASW -> KXAAAGASM 6h  search t 9.41  holdout 1.17  -> fail  (pred 0.85c vs spread 4.0c)
+  top 15 by statistic:
+    E08                         KXAAAGASW -> KXAAAGASM                 6h  stat   9.41  hours   5224  events   20
+    E05                            KXWTIW -> KXAAAGASM                 6h  stat   7.74  hours   3532  events    9
+    E05                            KXWTIW -> KXAAAGASM                 1h  stat   5.64  hours   3671  events   12
+    E03                          KXBRENTW -> KXAAAGASW                 6h  stat   4.91  hours   1911  events   22
+    X14                            KXWTIW -> KXCPIYOY                  6h  stat   4.67  hours   3633  events   10
+    E03                          KXBRENTW -> KXAAAGASW                 1h  stat   3.05  hours   2060  events   22
+    X10                           KXGOLDW -> KXCOPPERW                 1h  stat   3.00  hours   2345  events   19
+    E26                          KXTNOTEW -> KXGOLDW                   6h  stat   2.60  hours    552  events   11
+    E08                         KXAAAGASW -> KXAAAGASM                 1h  stat   2.57  hours   5688  events   23
+    E11                            KXWTIW -> KXSPRLVL                  1h  stat   2.42  hours   1090  events    9
+    E41                        KXAPRPOTUS -> KXTRUMPVH                 6h  stat   2.34  hours   1075  events   18
+    E13                         KXAAAGASW -> KXCPI                     6h  stat   2.30  hours   5231  events   19
+    X14                            KXWTIW -> KXCPIYOY                  1h  stat   2.30  hours   3818  events   17
+    X18                          KXTNOTEW -> KXFED                     6h  stat   2.09  hours    867  events   12
+    X05                          KXHURCAT -> KXAAAGASW                 6h  stat   1.86  hours   1616  events   27
+
+==============================================================================
+F2 REVERSED PAIRS (placebo)
+==============================================================================
+  tests defined 154, testable 125
+  statistic distribution: min 0.01  25% 0.54  median 1.03  75% 1.86  max 6.51
+  naive |stat| >= 2: 29 of 125 (23.2%)
+  shuffled null (500): best-noise median 3.42, 95th pct 5.79 <- threshold
+  survivors -> holdout: 1
+    E40-rev        KX538APPROVE -> KXAPRPOTUS 6h  search t 6.51  holdout -0.89  -> fail
+  top 15 by statistic:
+    E40-rev                  KX538APPROVE -> KXAPRPOTUS                6h  stat   6.51  hours    161  events    9
+    E08-rev                     KXAAAGASM -> KXAAAGASW                 1h  stat   4.42  hours   5508  events   87
+    E08-rev                     KXAAAGASM -> KXAAAGASW                 6h  stat   4.11  hours   4574  events   72
+    E06-rev                      KXBRENTW -> KXWTIW                    1h  stat   4.00  hours   2570  events   22
+    E06-rev                      KXBRENTW -> KXWTIW                    6h  stat   3.86  hours   2369  events   22
+    E05-rev                     KXAAAGASM -> KXWTIW                    6h  stat   3.25  hours   3232  events   37
+    X05-rev                     KXAAAGASW -> KXHURCAT                  6h  stat   3.14  hours   1508  events   13
+    X14-rev                      KXCPIYOY -> KXWTIW                    6h  stat   2.99  hours   3383  events   51
+    X11-rev                     KXCOPPERW -> KXWTIW                    6h  stat   2.86  hours   2114  events   19
+    X21-rev                          KXU3 -> KXTECHLAYOFF              1h  stat   2.82  hours   3940  events   15
+    X05-rev                     KXAAAGASW -> KXHURCAT                  1h  stat   2.80  hours   1960  events   18
+    E10-rev                        KXWTIW -> KXHORMUZWEEKLY            1h  stat   2.75  hours   2276  events   19
+    X37-rev                  KXPUREALBUMS -> KXALBUMEQUIV              1h  stat   2.73  hours   2108  events   28
+    E27-rev                    KXPAYROLLS -> KXJOBLESSCLAIMS           6h  stat   2.64  hours   3591  events   37
+    X21-rev                          KXU3 -> KXTECHLAYOFF              6h  stat   2.58  hours   3092  events   11
+
+==============================================================================
+F3 BROAD SWEEP (exploratory, two-sided)
+==============================================================================
+  tests defined 8672, testable 6591
+  statistic distribution: min 0.00  25% 0.39  median 0.82  75% 1.36  max 69.32
+  naive |stat| >= 2: 652 of 6591 (9.9%)
+  reference null (100): max |t| median 41.89, 95th pct 129.52; BH q=0.10 discoveries: 46
+  |t| >= 2 among story              : 18.3% of 447
+  |t| >= 2 among no-story (placebo) : 9.3% of 6144
+  survivors -> holdout: 46
+    KXTRUMPENDORSEMENTS>KXARTISTSTREAMSY KXTRUMPENDORSEMENTS -> KXARTISTSTREAMSY 1h  search t 69.32  holdout -3.06  -> fail  (pred 0.08c vs spread 7.0c)
+    KXTNOTEW>KXTECHLAYOFF KXTNOTEW -> KXTECHLAYOFF 1h  search t 14.65  holdout n/a  -> fail  (pred 0.10c vs spread 3.0c)
+    KXUE>KXMIDTERMMOV KXUE -> KXMIDTERMMOV 1h  search t 12.24  holdout 0.43  -> fail  (pred 0.01c vs spread 3.0c)
+    KXNETFLIXTOPVIEWSTV>KXARTISTSTREAMSY KXNETFLIXTOPVIEWSTV -> KXARTISTSTREAMSY 1h  search t -12.15  holdout 1.79  -> fail  (pred 0.02c vs spread 7.0c)
+    KXMAMDANIEO>KXH100W KXMAMDANIEO -> KXH100W 6h  search t -11.94  holdout 1.00  -> fail  (pred 0.48c vs spread 8.0c)
+    KXNETFLIXTOPVIEWSMOVIE>KXARTISTSTREAMSY KXNETFLIXTOPVIEWSMOVIE -> KXARTISTSTREAMSY 1h  search t -10.99  holdout 0.87  -> fail  (pred 0.03c vs spread 7.0c)
+    KXAAAGASW>KXAAAGASM KXAAAGASW -> KXAAAGASM 6h  search t 9.41  holdout 1.17  -> fail  (pred 0.85c vs spread 4.0c)
+    KXTRUTHSOCIAL>KXARTISTSTREAMSY KXTRUTHSOCIAL -> KXARTISTSTREAMSY 1h  search t 9.41  holdout -1.54  -> fail  (pred 0.01c vs spread 7.0c)
+    KXTSAW>KXARTISTSTREAMSY KXTSAW -> KXARTISTSTREAMSY 1h  search t 8.35  holdout -0.07  -> fail  (pred 0.02c vs spread 7.0c)
+    KXHURCAT>KXTRUMPVH KXHURCAT -> KXTRUMPVH 24h  search t -7.77  holdout -0.89  -> fail  (pred 0.96c vs spread 1.0c)
+    KXWTIW>KXAAAGASM KXWTIW -> KXAAAGASM 6h  search t 7.74  holdout 2.63  -> PASS  (pred 0.90c vs spread 4.0c)
+    KXEOWEEK>KXARTISTSTREAMSY KXEOWEEK -> KXARTISTSTREAMSY 1h  search t -7.44  holdout 0.53  -> fail  (pred 0.00c vs spread 7.0c)
+    KXHURCAT>KXHORMUZWEEKLY KXHURCAT -> KXHORMUZWEEKLY 3h  search t 7.37  holdout -2.04  -> fail  (pred 0.50c vs spread 3.0c)
+    KXUE>KXYTVIEWSHIGH KXUE -> KXYTVIEWSHIGH 6h  search t -7.12  holdout 1.83  -> fail  (pred 0.28c vs spread 2.0c)
+    KXVOTEPRIMARY>KXTRUTHSOCIAL KXVOTEPRIMARY -> KXTRUTHSOCIAL 3h  search t 7.06  holdout -1.17  -> fail
+    KXMAMDANIEO>KXMIDTERMMOV KXMAMDANIEO -> KXMIDTERMMOV 3h  search t 7.00  holdout -5.80  -> fail  (pred 0.02c vs spread 3.0c)
+    KXAAAGASW>KXAAAGASM KXAAAGASW -> KXAAAGASM 3h  search t 6.78  holdout 2.52  -> PASS  (pred 0.45c vs spread 4.0c)
+    KXMAMDANIEO>KXH100W KXMAMDANIEO -> KXH100W 3h  search t -6.67  holdout -0.75  -> fail  (pred 0.42c vs spread 7.0c)
+    KXFED>KXMIDTERMMOV KXFED -> KXMIDTERMMOV 1h  search t -6.59  holdout 0.54  -> fail  (pred 0.02c vs spread 3.0c)
+    KXBANKRUPTS>KXPAYROLLS KXBANKRUPTS -> KXPAYROLLS 1h  search t 6.55  holdout n/a  -> fail  (pred 0.09c vs spread 4.0c)
+    KX538APPROVE>KXAPRPOTUS KX538APPROVE -> KXAPRPOTUS 6h  search t 6.51  holdout -0.89  -> fail
+    KXTRUMPENDORSEMENTS>KXMIDTERMMOV KXTRUMPENDORSEMENTS -> KXMIDTERMMOV 3h  search t 6.29  holdout 17.09  -> PASS  (pred 0.05c vs spread 3.0c)
+    KXTRUMPENDORSEMENTS>KXMIDTERMMOV KXTRUMPENDORSEMENTS -> KXMIDTERMMOV 1h  search t 6.29  holdout 1.03  -> fail  (pred 0.02c vs spread 3.0c)
+    KXMAMDANIEO>KXCOPPERW KXMAMDANIEO -> KXCOPPERW 24h  search t 6.15  holdout -4.02  -> fail  (pred 0.96c vs spread 4.0c)
+    KXMAMDANIEO>KXVOTEPRIMARY KXMAMDANIEO -> KXVOTEPRIMARY 1h  search t -6.14  holdout 0.89  -> fail  (pred 2.16c vs spread 1.0c)
+    KXMAMDANIEO>KXARTISTSTREAMSY KXMAMDANIEO -> KXARTISTSTREAMSY 1h  search t -5.87  holdout 0.23  -> fail  (pred 0.01c vs spread 7.0c)
+    KXJOBLESSCLAIMS>KXA100W KXJOBLESSCLAIMS -> KXA100W 6h  search t -5.86  holdout n/a  -> fail  (pred 1.46c vs spread 5.0c)
+    KXWTIW>KXAAAGASM KXWTIW -> KXAAAGASM 1h  search t 5.64  holdout 2.57  -> PASS  (pred 0.38c vs spread 4.0c)
+    KXJOBLESSCLAIMS>KXARTISTSTREAMSY KXJOBLESSCLAIMS -> KXARTISTSTREAMSY 1h  search t 5.53  holdout -1.85  -> fail  (pred 0.02c vs spread 7.0c)
+    KXTRUMPACT>KXARTISTSTREAMSY KXTRUMPACT -> KXARTISTSTREAMSY 1h  search t 5.13  holdout -1.35  -> fail  (pred 0.01c vs spread 7.0c)
+    KXALBUMEQUIV>KXYTVIEWSHIGH KXALBUMEQUIV -> KXYTVIEWSHIGH 1h  search t 5.12  holdout -0.14  -> fail  (pred 0.06c vs spread 3.0c)
+    KXBRENTW>KXAAAGASW KXBRENTW -> KXAAAGASW 6h  search t 4.91  holdout 3.27  -> PASS  (pred 1.54c vs spread 4.0c)
+    KXWTIW>KXAAAGASW KXWTIW -> KXAAAGASW 1h  search t 4.76  holdout 1.16  -> fail  (pred 0.88c vs spread 5.0c)
+    KXHURCAT>KXTNOTEW KXHURCAT -> KXTNOTEW 1h  search t 4.70  holdout -0.57  -> fail
+    KXTRUMPENDORSEMENTS>KXUE KXTRUMPENDORSEMENTS -> KXUE 24h  search t -4.63  holdout -2.66  -> PASS  (pred 0.24c vs spread 6.0c)
+    KXPCECORE>KXTORNADO KXPCECORE -> KXTORNADO 3h  search t -4.45  holdout -1.23  -> fail  (pred 0.16c vs spread 7.0c)
+    KXAAAGASM>KXAAAGASW KXAAAGASM -> KXAAAGASW 1h  search t 4.42  holdout 2.17  -> PASS  (pred 0.46c vs spread 4.0c)
+    KXLAGODAYS>KXMAMDANIEO KXLAGODAYS -> KXMAMDANIEO 3h  search t 4.35  holdout -0.49  -> fail  (pred 0.45c vs spread 1.0c)
+    KXMAMDANIEO>KXAAAGASW KXMAMDANIEO -> KXAAAGASW 3h  search t 4.26  holdout -1.64  -> fail  (pred 0.62c vs spread 4.0c)
+    KXWTIW>KXAAAGASW KXWTIW -> KXAAAGASW 3h  search t 4.21  holdout 1.68  -> fail  (pred 1.54c vs spread 5.0c)
+    KXAAAGASM>KXAAAGASW KXAAAGASM -> KXAAAGASW 6h  search t 4.11  holdout 1.06  -> fail  (pred 0.80c vs spread 4.0c)
+    KXMAMDANIEO>KXAAAGASW KXMAMDANIEO -> KXAAAGASW 6h  search t 4.09  holdout 0.53  -> fail  (pred 0.55c vs spread 4.0c)
+    KXBRENTW>KXAAAGASW KXBRENTW -> KXAAAGASW 3h  search t 4.02  holdout 1.82  -> fail  (pred 1.44c vs spread 4.0c)
+    KXBRENTW>KXWTIW KXBRENTW -> KXWTIW 1h  search t 4.00  holdout 3.01  -> PASS
+    KXRAINNYCM>KXTRUTHSOCIAL KXRAINNYCM -> KXTRUTHSOCIAL 3h  search t -3.96  holdout 0.29  -> fail
+    KXRT>KXAPRPOTUS KXRT -> KXAPRPOTUS 24h  search t -3.82  holdout -0.54  -> fail
+  top 15 by statistic:
+    KXTRUMPENDORSEMENTS>KXARTISTSTREAMSY    KXTRUMPENDORSEMENTS -> KXARTISTSTREAMSY          1h  stat  69.32  hours   1257  events    8
+    KXTNOTEW>KXTECHLAYOFF               KXTNOTEW -> KXTECHLAYOFF              1h  stat  14.65  hours    410  events   12
+    KXUE>KXMIDTERMMOV                   KXUE -> KXMIDTERMMOV              1h  stat  12.24  hours   1748  events   29
+    KXNETFLIXTOPVIEWSTV>KXARTISTSTREAMSY    KXNETFLIXTOPVIEWSTV -> KXARTISTSTREAMSY          1h  stat  12.15  hours   1335  events    9
+    KXMAMDANIEO>KXH100W            KXMAMDANIEO -> KXH100W                   6h  stat  11.94  hours    222  events   13
+    KXNETFLIXTOPVIEWSMOVIE>KXARTISTSTREAMSY KXNETFLIXTOPVIEWSMOVIE -> KXARTISTSTREAMSY          1h  stat  10.99  hours   1298  events    9
+    KXAAAGASW>KXAAAGASM              KXAAAGASW -> KXAAAGASM                 6h  stat   9.41  hours   5224  events   20
+    KXTRUTHSOCIAL>KXARTISTSTREAMSY          KXTRUTHSOCIAL -> KXARTISTSTREAMSY          1h  stat   9.41  hours   1469  events    9
+    KXTSAW>KXARTISTSTREAMSY                 KXTSAW -> KXARTISTSTREAMSY          1h  stat   8.35  hours   1266  events   10
+    KXHURCAT>KXTRUMPVH               KXHURCAT -> KXTRUMPVH                24h  stat   7.77  hours    300  events    8
+    KXWTIW>KXAAAGASM                 KXWTIW -> KXAAAGASM                 6h  stat   7.74  hours   3532  events    9
+    KXEOWEEK>KXARTISTSTREAMSY               KXEOWEEK -> KXARTISTSTREAMSY          1h  stat   7.44  hours   1582  events   10
+    KXHURCAT>KXHORMUZWEEKLY               KXHURCAT -> KXHORMUZWEEKLY            3h  stat   7.37  hours    901  events   12
+    KXUE>KXYTVIEWSHIGH                   KXUE -> KXYTVIEWSHIGH             6h  stat   7.12  hours    608  events   11
+    KXVOTEPRIMARY>KXTRUTHSOCIAL          KXVOTEPRIMARY -> KXTRUTHSOCIAL             3h  stat   7.06  hours   1092  events   18
+
+Variants tested in v5: 6828; tally 52 + 6828 = 6880. No fees, no P&L.

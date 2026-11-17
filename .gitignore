@@ -1,0 +1,19 @@
+# Local databases (about 3 GB). Rebuild them with the pull scripts; see README.
+*.db
+*.db-shm
+*.db-wal
+
+# Run logs
+*.log
+
+# Older duplicate copies
+* (1).py
+
+# Notes for the coding assistant
+CLAUDE.md
+
+# Generated test pages for the game
+report/game/test/build/
+
+.DS_Store
+__pycache__/

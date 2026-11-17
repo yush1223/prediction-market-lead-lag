@@ -1,0 +1,52 @@
+pair_id,group,leader,laggard,sign,confidence,reason,same_release,matching,leader_direction,overlap_days,leader_events,laggard_events,leader_volume,laggard_volume,same_release_frac
+E01,energy,KXWTIW,KXAAAGASW,+,high,Crude is roughly half the pump price; retail gas follows crude with a 1-3 week lag.,no,series,economic cause,448,52,58,25642329,59505045,0.148
+E02,energy,KXWTIW,KXGAS,+,high,"Same pass-through, measured by the EIA weekly survey instead of AAA.",no,series,economic cause,333,46,44,25642329,1016207,0.0
+E03,energy,KXBRENTW,KXAAAGASW,+,med,Brent is the global crude benchmark; same pass-through to US pump prices.,no,series,economic cause,225,33,32,7756687,59505045,0.0
+E05,energy,KXWTIW,KXAAAGASM,+,high,Crude moves feed the month-end AAA gas price.,no,series,economic cause,517,61,15,25642329,63406232,0.086
+E06,energy,KXWTIW,KXBRENTW,+,med,Two crude benchmarks driven by the same supply news; Brent market is thinner here.,"no - different prices, same weekly close",series,economic cause,223,32,33,25642329,7756687,0.061
+E08,energy,KXAAAGASW,KXAAAGASM,+,med,Same AAA price at two horizons; tests whether the monthly market tracks the weekly one.,"check - same source, different dates",series,economic cause,891,126,30,59505045,63406232,0.171
+E09,energy,KXHORMUZWEEKLY,KXBRENTW,-,med,Fewer tanker transits through Hormuz means supply disruption and higher crude.,no,series,economic cause,194,25,28,7693769,7756687,0.0
+E10,energy,KXHORMUZWEEKLY,KXWTIW,-,med,"Same supply shock, US benchmark.",no,series,economic cause,202,26,29,7693769,25642329,0.0
+E11,energy,KXWTIW,KXSPRLVL,-,low,"High crude prices raise the odds of SPR releases, lowering the reserve level.",no,series,economic cause,167,23,21,25642329,901723,0.0
+E12,inflation,KXWTIW,KXCPI,+,med,Energy is the most volatile CPI component; crude moves shift the expected headline print.,no,series,economic cause,947,117,33,25642329,27152910,0.0
+E13,inflation,KXAAAGASW,KXCPI,+,high,Gasoline is ~3-4% of CPI and the main driver of monthly headline surprises.,no,series,economic cause,963,133,32,59505045,27152910,0.0
+E14,inflation,KXAAAGASM,KXCPIYOY,+,med,Monthly gas level feeds the year-over-year headline rate.,no,series,economic cause,1045,34,33,63406232,38585106,0.0
+E15,inflation,KXGAS,KXCPI,+,med,EIA gasoline price to headline CPI.,no,series,economic cause,744,98,25,1016207,27152910,0.103
+E16,rates,KXCPI,KXFED,+,high,Hotter inflation raises the expected fed funds rate path.,no - CPI and FOMC are separate dates,series,economic cause,1953,66,41,27152910,60692537,0.0
+E17,rates,KXCPICORE,KXFED,+,high,The Fed watches core more than headline.,no,series,economic cause,1652,57,36,8806948,60692537,0.0
+E18,rates,KXPCECORE,KXFED,+,high,Core PCE is the Fed's stated target measure.,no,series,economic cause,818,26,18,1395872,60692537,0.0
+E19,rates,KXCPI,KXFEDDECISION,+,med,Hot CPI shifts the next meeting toward a hike or away from a cut. Needs a scalar index (expected bps change).,no,series,economic cause,1377,47,29,27152910,637796098,0.026
+E20,inflation,KXCPICORE,KXPCECORE,+,high,Core PCE is largely computed from CPI components released ~2 weeks earlier; forecasters map one to the other.,no - different agency and date,series,economic cause,812,28,26,8806948,1395872,0.0
+E21,rates,KXCPI,KXTNOTEW,+,med,Inflation surprises push Treasury yields up.,no,series,economic cause,769,27,102,27152910,10669614,0.029
+E22,rates,KXFED,KXTNOTEW,+,med,A higher expected policy path lifts the 10-year yield.,no,series,economic cause,769,15,102,60692537,10669614,0.02
+E23,rates,KXTNOTEW,KXFRM,+,high,The 30-year mortgage rate is priced off the 10-year; Freddie Mac's weekly survey lags the bond market.,no,series,economic cause,268,36,37,10669614,719938,0.018
+E24,rates,KXFED,KXFRM,+,med,Policy expectations feed mortgage rates via the 10-year.,no,series,economic cause,790,16,109,60692537,719938,0.14
+E25,rates,KXCPI,KXFRM,+,med,Inflation surprise to yields to mortgage rate.,no,series,economic cause,849,29,117,27152910,719938,0.118
+E26,rates,KXTNOTEW,KXGOLDW,-,low,Higher yields raise the cost of holding gold.,no,series,economic cause,96,11,15,10669614,3852853,0.057
+E27,labor,KXJOBLESSCLAIMS,KXPAYROLLS,-,high,Weekly claims are the earliest read on layoffs; rising claims mean weaker payrolls.,no,series,economic cause,435,62,15,1769325,19794298,0.068
+E28,labor,KXJOBLESSCLAIMS,KXU3,+,high,Rising claims mean a higher unemployment rate.,no,series,economic cause,435,62,15,1769325,12071860,0.048
+E30,labor,KXJOBLESS,KXU3,+,med,"Older claims series, same logic.",no,series,economic cause,399,47,11,109130,12071860,0.186
+E31,labor,KXADP,KXPAYROLLS,+,high,ADP publishes two days before BLS and is used to forecast it.,no,series,economic cause,623,21,19,432841,19794298,0.048
+E32,labor,KXADP,KXU3,-,med,Strong private hiring means lower unemployment.,no,series,economic cause,623,21,19,432841,12071860,0.048
+E33,rates,KXPAYROLLS,KXFED,+,med,Strong jobs reduce the case for cuts.,no,series,economic cause,1362,44,30,19794298,60692537,0.0
+E34,rates,KXU3,KXFED,-,med,Rising unemployment raises the case for cuts.,no,series,economic cause,1910,62,40,12071860,60692537,0.0
+E36,rates,KXPAYROLLS,KXTNOTEW,+,med,Strong jobs push yields up.,no,series,economic cause,740,26,98,19794298,10669614,0.409
+E37,growth,KXPAYROLLS,KXGDP,+,low,Employment growth signals output growth for the quarter.,no,series,economic cause,1362,44,15,19794298,15093712,0.0
+E38,metals,KXGOLDW,KXSILVERW,+,med,Silver tracks gold as a precious metal; the silver market is thinner.,"no - different prices, same weekly close",series,economic cause,240,35,35,3852853,1981009,0.971
+E39,compute,KXH100W,KXA100W,+,med,H100 rental prices set the market for GPU compute; older A100 pricing follows.,no,series,economic cause,135,20,20,71466,54700,0.75
+E40,approval,KXAPRPOTUS,KX538APPROVE,+,high,RCP and 538 average many of the same polls; the 538 market is thinner.,no - different aggregator,series,economic cause,988,141,138,10173069,4039425,0.021
+E41,approval,KXAPRPOTUS,KXTRUMPVH,+,high,"Same, VoteHub average.",no,series,economic cause,162,24,23,10173069,510904,1.0
+E42,approval,KXAPRPOTUS,KXVOTEHUBTRUMPUPDOWN,+,med,"Same, VoteHub up/down market.",no,series,economic cause,256,36,38,10173069,1482228,0.868
+E44,approval,KXAPRPOTUS,KXGENERICBALLOTVOTEHUB,-,med,Higher presidential approval narrows the Democratic generic-ballot margin.,no,series,economic cause,215,31,31,10173069,320572,1.0
+E45,approval,KXAAAGASW,KXAPRPOTUS,-,med,Gas prices are among the most-cited drivers of presidential approval.,no,series,economic cause,920,125,131,59505045,10173069,0.007
+E46,approval,KXAAAGASW,KX538APPROVE,-,med,"Same, 538 average.",no,series,economic cause,299,37,40,59505045,4039425,0.007
+E47,approval,KXAAAGASW,KXTRUMPVH,-,med,"Same, VoteHub average.",no,series,economic cause,162,23,23,59505045,510904,0.0
+E48,approval,KXCPI,KXAPRPOTUS,-,low,Inflation surprises hurt approval.,no,series,economic cause,1817,62,259,27152910,10173069,0.088
+E49,climate,KXHMONTH,KXHMONTHRANGE,+,low,A record-hot month implies a high temperature index. Likely the same NASA release.,likely - check rules,series,economic cause,928,28,29,4383760,1245952,0.586
+S01,sports,KXNFLGAME,KXNFLWINS,+,med,Game-line moves on injury or lineup news should reprice that team's season-win total.,no,needs team/player matching,economic cause,189,52,36,8956637663,18298131,0.973
+S05,sports,KXNCAAFGAME,KXNCAAFWINS,+,med,Game lines to that team's regular-season wins.,no,needs team/player matching,economic cause,189,53,18,7550722065,4105357,0.842
+S06,sports,KXNCAAFGAME,KXNCAAFTOPAPRANK,+,low,Game results to final AP top-5 odds for that team.,no,needs team/player matching,economic cause,189,53,12,7550722065,789748,0.643
+S07,sports,KXNCAAMBGAME,KXMARMAD,+,low,Game lines to that team's championship odds.,no,needs team/player matching,economic cause,192,156,11,5051307821,713797842,0.346
+S08,sports,KXNCAAWBGAME,KXWMARMAD,+,low,"Same, women's.",no,needs team/player matching,economic cause,126,99,10,548877209,110189696,0.417
+S09,sports,KXPGAR1LEAD,KXPGATOUR,+,med,Round-1 leader odds to that golfer's tournament-win odds.,no,needs team/player matching,economic cause,214,52,64,338878587,4004269634,0.654
+S10,sports,KXPGAR3LEAD,KXPGATOUR,+,med,Round-3 leader odds to that golfer's tournament-win odds.,no,needs team/player matching,economic cause,218,40,84,50718856,4004269634,0.7

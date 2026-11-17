@@ -1,0 +1,36 @@
+test_spec_v3_hourly.md sha256 16f4d59b4f84... matches
+sign_map.csv sha256 9a551c0a596c... matches
+
+CONTINUITY (hourly index)
+  KX538APPROVE     4195 hours with a change,  91% non-zero
+  KXAAAGASW       10137 hours with a change,  77% non-zero
+  KXAPRPOTUS      12738 hours with a change,  76% non-zero
+  KXBRENTW         4293 hours with a change,  80% non-zero
+  KXFRM            1432 hours with a change,  67% non-zero
+  KXGOLDW          4578 hours with a change,  81% non-zero
+  KXSILVERW        4564 hours with a change,  80% non-zero
+  KXTNOTEW         3916 hours with a change,  87% non-zero
+  KXWTIW           7472 hours with a change,  95% non-zero
+
+SEARCH PERIOD (early 65% of joint hours)
+  pair   h  leader -> laggard               hours events       s  pred move  spread
+  E01    1  KXWTIW -> KXAAAGASW              2690     39    4.76     0.885c    5.0c
+  E01    6  KXWTIW -> KXAAAGASW              2407     38    3.26     1.604c    5.0c
+  E06    6  KXWTIW -> KXBRENTW               2455     22    2.08     0.412c    3.0c
+  E38    1  KXGOLDW -> KXSILVERW             2875     23    1.61     0.308c    4.0c
+  E38    6  KXGOLDW -> KXSILVERW             2648     23    0.99     0.296c    4.0c
+  E06    1  KXWTIW -> KXBRENTW               2601     22    0.61     0.094c    3.0c
+  E40    1  KXAPRPOTUS -> KX538APPROVE        467     17   -0.29                   
+  E40    6  KXAPRPOTUS -> KX538APPROVE        211     10   -0.41                   
+  E23    1  KXTNOTEW -> KXFRM                  28      6 untest.                   
+  E23    6  KXTNOTEW -> KXFRM                   1      1 untest.                   
+
+  testable tests: 8 of 10; naive s >= 2: 3
+
+SHUFFLED NULL (500 shuffles): best-noise s median 1.41, 95th pct 2.86 <- threshold
+
+SURVIVORS: 2
+  E01 1h: search 4.76, holdout 1.16 -> fail
+  E01 6h: search 3.26, holdout 3.58 -> PASS
+
+Variants tested: 8 (v3) + 37 earlier = 45. No fees, no P&L.

@@ -1,0 +1,5 @@
+requests>=2.31
+
+# Only needed if you point the client at private/authenticated endpoints.
+# Every endpoint used by these scripts is public and needs no key.
+# cryptography>=42.0

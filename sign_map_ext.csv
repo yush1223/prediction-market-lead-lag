@@ -1,0 +1,34 @@
+pair_id,group,leader,laggard,sign,confidence,reason,same_release,matching,leader_direction,overlap_days
+X01,energy,KXWTIW,KXNATGASW,+,low,Oil and gas prices share energy-demand and supply news.,no,series,economic cause,212
+X02,energy,KXBRENTW,KXNATGASW,+,low,"Global crude and gas move together on energy news, especially LNG.",no,series,economic cause,214
+X03,energy,KXHORMUZWEEKLY,KXAAAGASW,-,med,"Fewer Hormuz transits mean a supply shock, so higher pump prices.",no,series,economic cause,205
+X04,energy,KXHORMUZWEEKLY,KXNATGASW,-,med,Qatar LNG passes through Hormuz; disruption raises gas prices.,no,series,economic cause,194
+X05,energy,KXHURCAT,KXAAAGASW,+,low,"Stronger Gulf hurricanes threaten refineries, raising gasoline.",no,series,economic cause,487
+X06,energy,KXHURCAT,KXNATGASW,+,low,Gulf storms disrupt gas production and LNG exports.,no,series,economic cause,104
+X08,energy,KXTSAW,KXAAAGASW,+,low,Higher travel demand supports gasoline demand and prices.,no,series,economic cause,957
+X09,metals,KXCOPPERW,KXSILVERW,+,med,"Silver has large industrial demand, tracking copper's growth signal.",no,series,economic cause,196
+X10,metals,KXGOLDW,KXCOPPERW,+,low,"Broad metals moves (dollar, risk) hit both.",no,series,economic cause,196
+X11,metals,KXWTIW,KXCOPPERW,+,low,Oil and copper both price global growth.,no,series,economic cause,196
+X12,metals,KXTNOTEW,KXSILVERW,-,low,Higher yields raise the cost of holding precious metals.,no,series,economic cause,96
+X14,inflation,KXWTIW,KXCPIYOY,+,med,Crude moves shift the headline year-over-year inflation rate.,no,series,economic cause,881
+X15,inflation,KXAAAGASW,KXCPIYOY,+,med,Gasoline drives headline inflation surprises.,no,series,economic cause,963
+X16,inflation,KXWTIW,KXCPICOREYOY,+,low,Energy costs pass slowly into core goods and transport.,no,series,economic cause,867
+X18,rates,KXTNOTEW,KXFED,+,med,The bond market prices policy expectations first.,no,series,economic cause,769
+X19,growth,KXWTIW,KXGDP,-,low,Oil price shocks weigh on real growth.,no,series,economic cause,947
+X20,labor,KXJOBLESSCLAIMS,KXTECHLAYOFF,+,low,"Rising claims signal rising layoffs, including in tech.",no,series,economic cause,370
+X21,labor,KXTECHLAYOFF,KXU3,+,low,Layoff rates lead unemployment.,no,series,economic cause,1080
+X22,labor,KXBANKRUPTS,KXU3,+,low,Corporate bankruptcies lead job losses.,no,series,economic cause,563
+X23,labor,KXU3,KXUE,+,low,"Labor markets in the US, UK and Canada share a global cycle.",no,series,economic cause,302
+X24,approval,KXAPRPOTUS,KX538APPROVEMIN,+,med,Higher current approval raises the expected minimum.,no,series,economic cause,664
+X25,approval,KXAPRPOTUS,KX538APPROVEMAX,+,med,Higher current approval raises the expected maximum.,no,series,economic cause,664
+X26,approval,KX538APPROVE,KX538APPROVEMIN,+,high,The minimum is path-dependent on the same 538 average.,no,series,economic cause,659
+X27,approval,KX538APPROVE,KX538APPROVEMAX,+,high,The maximum is path-dependent on the same 538 average.,no,series,economic cause,659
+X28,approval,KXAAAGASW,KX538APPROVEMIN,-,low,"Higher gas prices hurt approval, lowering the expected minimum.",no,series,economic cause,279
+X29,politics,KXEOWEEK,KXTRUMPACT,+,high,Executive orders are counted among presidential actions.,no,series,economic cause,271
+X30,politics,KXTRUTHSOCIAL,KXTRUMPENDORSEMENTS,+,med,"Endorsements are made by Truth Social posts; more posting, more endorsements.",no,series,economic cause,194
+X31,politics,KXTRUMPACT,KXTRUMPPHOTO,+,low,More official actions mean more photographed public events.,no,series,economic cause,181
+X35,health,KXVAXX,KXBOOSTER,+,med,Booster uptake follows the vaccinated base.,no,series,economic cause,165
+X36,mobility,KXMTA,KXTSAW,+,low,Subway and air travel share a mobility recovery.,no,series,economic cause,330
+X37,entertainment,KXALBUMEQUIV,KXPUREALBUMS,+,low,Album-equivalent units include pure sales of the same releases.,no,series,economic cause,222
+X38,entertainment,KXNETFLIXTOPVIEWSTV,KXNETFLIXTOPVIEWSMOVIE,+,low,Platform-wide engagement lifts both charts.,no,series,economic cause,309
+X39,entertainment,KXARTISTSTREAMSY,KXYTVIEWSHIGH,+,low,Streaming and video popularity move together.,no,series,economic cause,130

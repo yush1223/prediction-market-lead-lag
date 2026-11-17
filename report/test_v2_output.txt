@@ -1,0 +1,98 @@
+test_spec_v2.md sha256 f04c3c53f4d8... matches
+sign_map.csv sha256 9a551c0a596c... matches
+
+CONTINUITY (index v2)
+  KX538APPROVE             546 days with a change, 100% non-zero
+  KXA100W                   64 days with a change,  98% non-zero
+  KXAAAGASM                784 days with a change,  96% non-zero
+  KXAAAGASW                410 days with a change,  97% non-zero
+  KXADP                    547 days with a change,  59% non-zero
+  KXAPRPOTUS               922 days with a change,  99% non-zero
+  KXBRENTW                 149 days with a change,  99% non-zero
+  KXCPI                   1825 days with a change,  84% non-zero
+  KXCPICORE               1367 days with a change,  78% non-zero
+  KXCPIYOY                1209 days with a change,  83% non-zero
+  KXFED                   1788 days with a change,  73% non-zero
+  KXFEDDECISION              0 days with a change,   0% non-zero
+  KXFRM                    298 days with a change,  87% non-zero
+  KXGAS                    212 days with a change,  97% non-zero
+  KXGDP                   1815 days with a change,  78% non-zero
+  KXGENERICBALLOTVOTEHUB   150 days with a change,  80% non-zero
+  KXGOLDW                  159 days with a change,  96% non-zero
+  KXH100W                   60 days with a change, 100% non-zero
+  KXHMONTH                   0 days with a change,   0% non-zero
+  KXHMONTHRANGE            763 days with a change,  93% non-zero
+  KXHORMUZWEEKLY           178 days with a change,  98% non-zero
+  KXJOBLESS                189 days with a change,  62% non-zero
+  KXJOBLESSCLAIMS          294 days with a change,  91% non-zero
+  KXPAYROLLS              1200 days with a change,  76% non-zero
+  KXPCECORE                586 days with a change,  72% non-zero
+  KXSILVERW                161 days with a change,  98% non-zero
+  KXSPRLVL                 118 days with a change,  89% non-zero
+  KXTNOTEW                 317 days with a change,  95% non-zero
+  KXTRUMPVH                112 days with a change,  97% non-zero
+  KXU3                    1589 days with a change,  70% non-zero
+  KXVOTEHUBTRUMPUPDOWN       0 days with a change,   0% non-zero
+  KXWTIW                   331 days with a change,  96% non-zero
+
+SEARCH PERIOD  (early 65% of each pair's joint days)
+  pair leader -> laggard                        sign  days events s = signed t
+  E37  KXPAYROLLS -> KXGDP                         +   719     11         1.57
+  E03  KXBRENTW -> KXAAAGASW                       +    38     21         1.47
+  E31  KXADP -> KXPAYROLLS                         +   352     13         1.15
+  E41  KXAPRPOTUS -> KXTRUMPVH                     +    57     15         1.15
+  E15  KXGAS -> KXCPI                              +   136     10         1.04
+  E14  KXAAAGASM -> KXCPIYOY                       +   451     25         1.01
+  E32  KXADP -> KXU3                               -   341     13         0.89
+  E11  KXWTIW -> KXSPRLVL                          -    36     10         0.86
+  E01  KXWTIW -> KXAAAGASW                         +    57     32         0.82
+  E12  KXWTIW -> KXCPI                             +   204     24         0.81
+  E08  KXAAAGASW -> KXAAAGASM                      +   215     22         0.74
+  E48  KXCPI -> KXAPRPOTUS                         -   419    157         0.45
+  E16  KXCPI -> KXFED                              +  1051     30         0.38
+  E17  KXCPICORE -> KXFED                          +   831     25         0.21
+  E25  KXCPI -> KXFRM                              +   130     44         0.18
+  E24  KXFED -> KXFRM                              +   109     40         0.06
+  E06  KXWTIW -> KXBRENTW                          +    74     20         0.06
+  E27  KXJOBLESSCLAIMS -> KXPAYROLLS               -   189     12         0.04
+  E34  KXU3 -> KXFED                               -   930     31         0.03
+  E45  KXAAAGASW -> KXAPRPOTUS                     -    61     48        -0.08
+  E44  KXAPRPOTUS -> KXGENERICBALLOTVOTEHUB        -    76     21        -0.17
+  E30  KXJOBLESS -> KXU3                           +    96     10        -0.18
+  E13  KXAAAGASW -> KXCPI                          +   248     25        -0.18
+  E40  KXAPRPOTUS -> KX538APPROVE                  +    70     65        -0.27
+  E33  KXPAYROLLS -> KXFED                         +   719     22        -0.38
+  E21  KXCPI -> KXTNOTEW                           +   133     51        -0.40
+  E09  KXHORMUZWEEKLY -> KXBRENTW                  -    56     20        -0.41
+  E20  KXCPICORE -> KXPCECORE                      +   330     16        -0.55
+  E28  KXJOBLESSCLAIMS -> KXU3                     +   182     12        -0.73
+  E18  KXPCECORE -> KXFED                          +   368     14        -0.80
+  E05  KXWTIW -> KXAAAGASM                         +   127     11        -0.82
+  E22  KXFED -> KXTNOTEW                           +   136     52        -0.89
+  E38  KXGOLDW -> KXSILVERW                        +    80     22        -1.03
+  E10  KXHORMUZWEEKLY -> KXWTIW                    -    60     20        -1.34
+  E36  KXPAYROLLS -> KXTNOTEW                      +   118     47        -2.11
+  E02  KXWTIW -> KXGAS                             +     9      9   untestable
+  E19  KXCPI -> KXFEDDECISION                      +     0      0   untestable
+  E23  KXTNOTEW -> KXFRM                           +     5      2   untestable
+  E26  KXTNOTEW -> KXGOLDW                         -    24      7   untestable
+  E39  KXH100W -> KXA100W                          +    22      8   untestable
+  E42  KXAPRPOTUS -> KXVOTEHUBTRUMPUPDOWN          +     0      0   untestable
+  E46  KXAAAGASW -> KX538APPROVE                   -    12     10   untestable
+  E47  KXAAAGASW -> KXTRUMPVH                      -    14     14   untestable
+  E49  KXHMONTH -> KXHMONTHRANGE                   +     0      0   untestable
+
+  testable pairs: 35 of 44
+  distribution of s: min -2.11  25% -0.40  median 0.04  75% 0.82  max 1.57
+  pairs with s >= 2 (naive, uncorrected): 0   expected by chance at 2.3% one-sided: 0.8
+
+SHUFFLED NULL  (500 date-shuffles of the whole search)
+  best-noise s: median 2.38, 95th percentile 4.26  <- threshold
+
+SURVIVORS (search s > 4.26): 0
+
+SIZE vs SPREAD (threshold laggards; 1-sd leader move, search period)
+  E37 KXGDP: predicted 0.12c vs spread 4.0c
+
+Variants tested: 35 (v2) + 2 (v1 pilot). Fees not modelled; no P&L claimed.
+  [csv] report/test_v2_results.csv

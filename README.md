@@ -7,7 +7,7 @@ I tested this on Kalshi's public market data, across 51 economically linked mark
 markets to season-win markets, recovers about 60% of the bid-ask spread. Testable markets turn out to be
 efficient markets.
 
-- **Play the game:** [Beat the Spread](docs/index.html), a two-minute game that replays real moments from this data
+- **Play the game:** [Beat the Spread](https://yush1223.github.io/prediction-market-lead-lag/), a two-minute game that replays real moments from this data
 - **Read the report:** [Kalshi_lead_lag_research_report.pdf](report/Kalshi_lead_lag_research_report.pdf)
 
 ## What I built
